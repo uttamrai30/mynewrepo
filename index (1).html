@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BNK SALON – Unisex Modern Salon & Spa</title>
+<meta name="description" content="BNK SALON: unisex hair, face wash, grooming and spa. Book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Cormorant+Garamond:ital,wght@1,500;1,700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0a15;--bg2:#161024;--ink:#f5f0fa;--mute:#a79cbd;--pink:#ff3d7f;--gold:#f2c46d;--line:#2c2342;
+--d:'Unbounded','Arial Black',sans-serif;--s:'Cormorant Garamond',Georgia,serif;--b:'Outfit',system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.65 var(--b)}
+a{color:inherit}h1,h2,h3{margin:0;font-family:var(--d);font-weight:800;line-height:1.05}
+.wrap{max-width:1100px;margin:auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+header{position:sticky;top:0;z-index:20;background:rgba(13,10,21,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 17px var(--d);letter-spacing:.06em}
+.links{display:flex;gap:22px;font-size:14px;font-weight:400}.links a{text-decoration:none;color:var(--mute)}.links a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--pink);color:#fff;border:0;border-radius:4px;padding:13px 26px;font:600 15px var(--b);cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,61,127,.4)}
+.btn.o{background:none;border:1.5px solid var(--gold);color:var(--gold)}
+.hero{position:relative;padding:80px 0 60px;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-120px;top:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(255,61,127,.35),transparent 65%)}
+.status{display:inline-flex;gap:8px;align-items:center;font-size:13px;border:1px solid var(--line);padding:6px 14px;border-radius:99px;position:relative}
+.dot{width:9px;height:9px;border-radius:50%;background:#777}.dot.on{background:#3ddc84;box-shadow:0 0 10px #3ddc84}
+.big{font-size:clamp(90px,26vw,290px);letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px var(--ink);margin:18px 0 0;position:relative}
+.big span{color:var(--pink);-webkit-text-stroke:0}
+.tag{font:italic 700 clamp(28px,5vw,52px)/1.1 var(--s);color:var(--gold);margin:6px 0 14px;position:relative}
+.hero p{max-width:50ch;color:var(--mute);position:relative}.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;position:relative}
+.marq{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden;white-space:nowrap}
+.marq div{display:inline-block;padding:16px 0;font:500 14px var(--d);letter-spacing:.12em;animation:m 28s linear infinite}
+.marq span{margin:0 28px;color:var(--mute)}.marq i{color:var(--pink);font-style:normal}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:80px 0}
+h2{font-size:clamp(30px,5.5vw,56px);margin-bottom:12px}
+h2 em{font:italic 700 1.25em var(--s);color:var(--gold)}
+.sub{color:var(--mute);max-width:56ch;margin:0 0 34px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:36px;align-items:start}
+.pts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pt{border-left:2px solid var(--pink);padding-left:14px}.pt b{font:600 15px var(--d);display:block}.pt span{color:var(--mute);font-size:15px}
+.svc{border-top:1px solid var(--line)}
+.svc a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .25s,background .25s}
+.svc a:hover{padding-left:20px;background:var(--bg2)}
+.svc h3{font-size:clamp(20px,3.6vw,34px)}.svc p{margin:0;color:var(--mute);max-width:34ch;text-align:right;font-size:15px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tab{background:none;border:1.5px solid var(--line);color:var(--ink);padding:9px 20px;border-radius:99px;font:400 14px var(--b);cursor:pointer}
+.tab[aria-selected=true]{background:var(--gold);color:#1a1200;border-color:var(--gold);font-weight:600}
+.rates{background:var(--bg2);border:1px solid var(--line);border-radius:10px}
+.rate{display:flex;justify-content:space-between;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line)}.rate:last-child{border:0}
+.rate small{display:block;color:var(--mute)}.rate b{font:500 18px var(--d);color:var(--gold);white-space:nowrap}
+table{width:100%;border-collapse:collapse}td{padding:12px 0;border-bottom:1px solid var(--line)}td:last-child{text-align:right;color:var(--gold)}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:24px}.card h3{font-size:20px;margin-bottom:8px}.card p{margin:0;color:var(--mute)}
+form{display:grid;gap:14px}label{display:grid;gap:5px;font-size:14px;color:var(--mute)}
+input,select{font:inherit;padding:12px;background:var(--bg2);color:var(--ink);border:1.5px solid var(--line);border-radius:6px;width:100%}
+.err{color:#ff7a7a;font-size:14px;min-height:1em}
+.ok{background:var(--bg2);border:1.5px solid var(--pink);border-radius:10px;padding:20px;margin-top:16px}
+footer{border-top:1px solid var(--line);padding:30px 0 100px;color:var(--mute);font-size:14px}
+#cb{position:fixed;right:16px;bottom:16px;z-index:30}
+#cbBtn{width:60px;height:60px;border-radius:50%;border:0;background:var(--pink);color:#fff;font-size:26px;cursor:pointer;box-shadow:0 8px 24px rgba(255,61,127,.5)}
+#cbBox{display:none;position:absolute;right:0;bottom:72px;width:min(350px,calc(100vw - 32px));background:var(--bg2);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.6)}
+#cbBox.open{display:block}#cbHead{background:var(--pink);padding:13px 16px;font:600 14px var(--d)}
+#msgs{height:260px;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.m{padding:9px 12px;border-radius:10px;max-width:86%;font-size:14px;line-height:1.45}
+.m.b{background:var(--line);align-self:flex-start}.m.u{background:var(--pink);align-self:flex-end}
+.chips{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 8px}.chips button{border:1px solid var(--gold);color:var(--gold);background:none;border-radius:99px;padding:4px 11px;font:400 12px var(--b);cursor:pointer}
+#cbForm{display:flex;gap:6px;padding:10px;border-top:1px solid var(--line)}
+@media(max-width:700px){.links{display:none}.svc p{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marq div{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top" aria-label="BNK SALON home"><svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19.5" fill="none" stroke="#f2c46d" stroke-width="1.5"/><text x="21" y="26" text-anchor="middle" font-family="Unbounded,Arial Black,sans-serif" font-weight="800" font-size="13" fill="#ff3d7f">BNK</text></svg>BNK SALON</a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#rates">Rates</a><a href="#hours">Timings</a><a href="#contact">Contact</a></div>
+<a class="btn" href="#book">Book now</a></nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div class="status"><span class="dot" id="dot"></span><span id="open">Checking hours…</span></div>
+<h1 class="big" aria-label="BNK"><span>B</span>NK</h1>
+<div class="tag">Salon &amp; Spa for everyone</div>
+<p>A modern unisex salon. Sharp cuts, the right face wash for your skin, clean grooming and real relaxation.</p>
+<div class="row"><a class="btn" href="#book">Book an appointment</a><a class="btn o" href="#rates">View rate list</a></div>
+</div></div>
+<div class="marq" aria-hidden="true"><div><span>HAIRCUT</span><i>✦</i><span>FACE WASH</span><i>✦</i><span>BEARD</span><i>✦</i><span>HAIR SPA</span><i>✦</i><span>GROOMING</span><i>✦</i><span>MASSAGE</span><i>✦</i><span>HAIRCUT</span><i>✦</i><span>FACE WASH</span><i>✦</i><span>BEARD</span><i>✦</i><span>HAIR SPA</span><i>✦</i><span>GROOMING</span><i>✦</i><span>MASSAGE</span><i>✦</i></div></div>
+
+<section id="about"><div class="wrap two">
+<div><h2>About <em>BNK</em></h2><p class="sub">BNK SALON gives men and women one calm, modern place for hair, skin and relaxation. Clear prices, trained stylists and clean tools on every visit.</p></div>
+<div class="pts"><div class="pt"><b>Unisex team</b><span>Cuts and colour for all.</span></div><div class="pt"><b>Skin first</b><span>Face wash matched to your skin.</span></div><div class="pt"><b>Clean kit</b><span>Sterilised for every client.</span></div><div class="pt"><b>Fixed rates</b><span>No surprises at billing.</span></div></div>
+</div></section>
+
+<section id="services" style="background:var(--bg2)"><div class="wrap"><h2>Our <em>services</em></h2><p class="sub">Pick a service to see its prices.</p>
+<div class="svc" id="svc"></div></div></section>
+
+<section id="rates"><div class="wrap"><h2>Rate <em>list</em></h2><p class="sub">Prices in ₹. Sample rates: edit them in the code to match your salon.</p>
+<div class="tabs" role="tablist" id="tabs"></div><div class="rates" id="rateBox"></div></div></section>
+
+<section id="hours" style="background:var(--bg2)"><div class="wrap two">
+<div><h2>Business <em>timings</em></h2><p class="sub">Open all week. Last appointment starts one hour before closing.</p></div>
+<div><table><tr><td>Monday – Friday</td><td>10:00 am – 9:00 pm</td></tr><tr><td>Saturday</td><td>9:00 am – 10:00 pm</td></tr><tr><td>Sunday</td><td>10:00 am – 8:00 pm</td></tr></table></div>
+</div></section>
+
+<section id="book"><div class="wrap two">
+<div><h2>Book <em>online</em></h2><p class="sub">Choose a service and time. You confirm the slot on WhatsApp and we reply to lock it in.</p></div>
+<div><form id="bf" novalidate>
+<label>Your name<input id="n" autocomplete="name"></label>
+<label>Phone number<input id="p" type="tel" autocomplete="tel" placeholder="10-digit mobile"></label>
+<label>Service<select id="s"></select></label>
+<label>Date<input id="d" type="date"></label>
+<label>Time<select id="t"></select></label>
+<div class="err" id="e" role="alert"></div>
+<button class="btn" type="submit">Request booking</button></form>
+<div class="ok" id="ok" hidden></div></div>
+</div></section>
+
+<section id="contact" style="background:var(--bg2)"><div class="wrap two">
+<div><h2>Contact <em>us</em></h2><p class="sub">Call, message or visit.</p>
+<p><b>Phone:</b> <a href="tel:+919876543210">+91 98765 43210</a><br><b>Phone 2:</b> <a href="tel:+919876501234">+91 98765 01234</a><br><b>WhatsApp:</b> <a href="https://wa.me/919876543210">+91 98765 43210</a><br><b>Web:</b> <a href="https://www.bnksalon.com">www.bnksalon.com</a><br><b>Email:</b> hello@bnksalon.com</p></div>
+<div class="card"><h3>Visit BNK SALON</h3><p>Add your full shop address here.</p></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 BNK SALON · Unisex salon &amp; spa</div></footer>
+
+<div id="cb"><div id="cbBox" role="dialog" aria-label="BNK assistant"><div id="cbHead">BNK Assistant</div><div id="msgs" aria-live="polite"></div><div class="chips" id="chips"></div>
+<form id="cbForm"><input id="q" placeholder="Ask about prices, timings…" aria-label="Message"><button class="btn" style="padding:8px 14px">Send</button></form></div>
+<button id="cbBtn" aria-label="Open chat assistant">💬</button></div>
+
+<script>
+var PHONE="919876543210";
+var R={"Hair":[["Haircut (men)","30 min",250],["Haircut (women)","45 min",450],["Kids haircut","20 min",200],["Hair wash and blow-dry","30 min",300],["Global colour","90 min",1800],["Smoothing / keratin","3 hr",3500]],
+"Face wash":[["Basic cleanse","20 min",300],["Deep cleanse (oily skin)","30 min",450],["Hydrating (dry skin)","30 min",500],["De-tan face wash","30 min",600],["Brightening / glow","40 min",700],["Sensitive skin gentle wash","30 min",550]],
+"Grooming":[["Beard trim and shape","20 min",150],["Clean shave","20 min",150],["Threading (eyebrow)","10 min",60],["Waxing (full arms)","30 min",350],["Manicure","40 min",500],["Pedicure","50 min",600]],
+"Spa":[["Head massage","20 min",250],["Foot massage","30 min",400],["Hair spa","45 min",800],["Full-body massage","60 min",1800]]};
+var D={"Hair":"Cuts, colour, smoothing","Face wash":"6 types for every skin","Grooming":"Beard, shave, wax, nails","Spa":"Massage and hair spa"};
+var tabs=document.getElementById("tabs"),box=document.getElementById("rateBox"),sel=document.getElementById("s"),svc=document.getElementById("svc");
+function show(k){[].forEach.call(tabs.children,function(b){b.setAttribute("aria-selected",b.textContent===k)});
+box.innerHTML=R[k].map(function(r){return '<div class="rate"><div>'+r[0]+'<small>'+r[1]+'</small></div><b>₹'+r[2]+'</b></div>'}).join("")}
+Object.keys(R).forEach(function(k){
+var b=document.createElement("button");b.className="tab";b.type="button";b.setAttribute("role","tab");b.textContent=k;b.onclick=function(){show(k)};tabs.appendChild(b);
+var g=document.createElement("optgroup");g.label=k;R[k].forEach(function(r){var o=document.createElement("option");o.value=r[0];o.textContent=r[0]+" (₹"+r[2]+")";g.appendChild(o)});sel.appendChild(g);
+var a=document.createElement("a");a.href="#rates";a.innerHTML="<h3>"+k+"</h3><p>"+D[k]+"</p>";a.onclick=function(){show(k)};svc.appendChild(a)});
+show("Hair");
+var T=document.getElementById("t");for(var h=10;h<=20;h++){["00","30"].forEach(function(m){if(h==20&&m=="30")return;var o=document.createElement("option");o.textContent=(h%12||12)+":"+m+(h<12?" am":" pm");T.appendChild(o)})}
+var Dt=document.getElementById("d");Dt.min=Dt.value=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+var n_=document.getElementById("n"),p_=document.getElementById("p");
+document.getElementById("bf").onsubmit=function(ev){ev.preventDefault();var n=n_.value.trim(),p=p_.value.replace(/\D/g,""),e=document.getElementById("e");
+if(!n){e.textContent="Enter your name.";return}if(p.length<10){e.textContent="Enter a valid 10-digit phone number.";return}if(!Dt.value){e.textContent="Choose a date.";return}e.textContent="";
+var msg="Booking request – BNK SALON\nName: "+n+"\nPhone: "+p+"\nService: "+sel.value+"\nDate: "+Dt.value+"\nTime: "+T.value;
+var ok=document.getElementById("ok");ok.hidden=false;ok.innerHTML="<b>Almost done, "+n.replace(/[<>&]/g,"")+".</b><br>Send this request on WhatsApp to confirm your slot.<br><br><a class='btn' target='_blank' rel='noopener' href='https://wa.me/"+PHONE+"?text="+encodeURIComponent(msg)+"'>Send on WhatsApp</a>"};
+(function(){var ist=new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Kolkata"})),d=ist.getDay(),m=ist.getHours()*60+ist.getMinutes();
+var hr=d==0?[600,1200]:d==6?[540,1320]:[600,1260],on=m>=hr[0]&&m<hr[1];
+document.getElementById("dot").className="dot"+(on?" on":"");document.getElementById("open").textContent=on?"Open now":"Closed now · opens "+(d==6?"9":"10")+":00 am"})();
+var cb=document.getElementById("cbBox"),ms=document.getElementById("msgs"),ch=document.getElementById("chips");
+function add(t,c){var d=document.createElement("div");d.className="m "+c;d.textContent=t;ms.appendChild(d);ms.scrollTop=ms.scrollHeight}
+var KB=[[/price|rate|cost|charge|how much/,"Sample rates: men's haircut ₹250, women's haircut ₹450, face wash from ₹300, beard trim ₹150, head massage ₹250. See the Rates section for the full list."],
+[/face ?wash|facial|skin|oily|dry|tan|glow/,"6 face wash types: Basic ₹300, Deep cleanse for oily skin ₹450, Hydrating for dry skin ₹500, De-tan ₹600, Brightening ₹700, Sensitive skin ₹550. Tell me your skin type and I will suggest one."],
+[/groom|beard|shave|thread|wax|mani|pedi/,"Grooming: beard trim ₹150, clean shave ₹150, eyebrow threading ₹60, full-arm waxing ₹350, manicure ₹500, pedicure ₹600."],
+[/hair|cut|colou?r|keratin|smooth/,"Hair: men's cut ₹250, women's cut ₹450, kids ₹200, global colour ₹1800, smoothing/keratin ₹3500."],
+[/spa|massage/,"Spa: head massage ₹250, foot massage ₹400, hair spa ₹800, full-body massage ₹1800."],
+[/time|open|hour|close|when/,"Mon–Fri 10 am–9 pm, Sat 9 am–10 pm, Sun 10 am–8 pm."],
+[/book|appoint|slot/,"Use the Book online section: pick service, date and time, then confirm on WhatsApp."],
+[/phone|call|contact|number|whatsapp|web|site|link/,"Call +91 98765 43210 or +91 98765 01234. Website: www.bnksalon.com."],
+[/men|women|unisex|boy|girl/,"BNK SALON is unisex. Everyone is welcome."],
+[/hi|hello|hey/,"Hello! I can help with prices, services, timings and booking."]];
+function ask(t){add(t,"u");var a="I am not sure about that. Please call +91 98765 43210 and our team will help.";for(var i=0;i<KB.length;i++)if(KB[i][0].test(t.toLowerCase())){a=KB[i][1];break}setTimeout(function(){add(a,"b")},350)}
+["Prices","Face wash types","Timings","Book"].forEach(function(c){var b=document.createElement("button");b.textContent=c;b.type="button";b.onclick=function(){ask(c=="Book"?"book":c)};ch.appendChild(b)});
+document.getElementById("cbBtn").onclick=function(){cb.classList.toggle("open");if(!ms.children.length)add("Hi, I am the BNK assistant. Ask me about services, rates, timings or booking.","b")};
+document.getElementById("cbForm").onsubmit=function(e){e.preventDefault();var q=document.getElementById("q");if(q.value.trim()){ask(q.value.trim());q.value=""}};
+</script>
+</body>
+</html>
